@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>Validator\StringMaskValidator | </title>
+                    <link rel="stylesheet" type="text/css" href="../stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="../classes.html">Classes</a></li>
+                            <li><a href="../namespaces.html">Namespaces</a></li>
+                        <li><a href="../interfaces.html">Interfaces</a></li>
+            <li><a href="../doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title"></div>
+
+            <div class="type">Class</div>
+    <h1><a href="../Validator.html">Validator</a>\StringMaskValidator</h1>
+    </div>
+        <div class="content">
+                <p>class    <strong>StringMaskValidator</strong>        implements
+        <a href="../Validator/ValidatorInterface.html"><abbr title="Validator\ValidatorInterface">ValidatorInterface</abbr></a></p>
+
+            <div class="description">
+            <p>String mask validator</p>
+            <p>
+</p>
+        </div>
+    
+    
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method___construct">__construct</a>(<abbr title="Validator\str">str</abbr> $mask = null, <abbr title="Validator\str">str</abbr> $ref = null, array $options = array())
+                    <p>Constructor</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    object
+                </td>
+                <td class="last">
+                    <a href="#method_setMask">setMask</a>(<abbr title="Validator\str">str</abbr> $mask, bool $protect = null)
+                    <p>Set the mask to test for values The mask can be escaped by the 'preg_quote' function setting the second argument on TRUE.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    object
+                </td>
+                <td class="last">
+                    <a href="#method_setMaskReference">setMaskReference</a>(<abbr title="Validator\str">str</abbr> $ref)
+                    <p>Set the mask reference</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    object
+                </td>
+                <td class="last">
+                    <a href="#method_setPcreOptions">setPcreOptions</a>(<abbr title="Validator\str">str</abbr> $opts)
+                    <p>Set the PCRE options</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    object
+                </td>
+                <td class="last">
+                    <a href="#method_setPcreDelimiter">setPcreDelimiter</a>(<abbr title="Validator\str">str</abbr> $delim)
+                    <p>Set the PCRE delimiter</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    object
+                </td>
+                <td class="last">
+                    <a href="#method_setPregQuote">setPregQuote</a>(bool $protect)
+                    <p>Set the protection on mask</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_validate">validate</a>(string $value, bool $send_errors = false)
+                    <p>Process validation</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <abbr title="Validator\misc">misc</abbr>
+                </td>
+                <td class="last">
+                    <a href="#method_sanitize">sanitize</a>(<abbr title="Validator\misc">misc</abbr> $value)
+                    <p>Try to make $value pass the validation</p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method___construct">
+        <div class="location">at line 53</div>
+        <code>            public            
+    <strong>__construct</strong>(<abbr title="Validator\str">str</abbr> $mask = null, <abbr title="Validator\str">str</abbr> $ref = null, array $options = array())</code>
+    </h3>
+    <div class="details">
+        <p>Constructor</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="Validator\str">str</abbr></td>
+                <td>$mask</td>
+                <td>The mask to test</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Validator\str">str</abbr></td>
+                <td>$ref</td>
+                <td>The mask reference</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td>A set of options to set the object properties</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setMask">
+        <div class="location">at line 85</div>
+        <code>            public            object
+    <strong>setMask</strong>(<abbr title="Validator\str">str</abbr> $mask, bool $protect = null)</code>
+    </h3>
+    <div class="details">
+        <p>Set the mask to test for values The mask can be escaped by the 'preg_quote' function setting the second argument on TRUE.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="Validator\str">str</abbr></td>
+                <td>$mask</td>
+                <td>The mask to test in PCRE</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$protect</td>
+                <td>Do we have to protect the mask ?</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>object</td>
+            <td>$this for method chaining</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setMaskReference">
+        <div class="location">at line 100</div>
+        <code>            public            object
+    <strong>setMaskReference</strong>(<abbr title="Validator\str">str</abbr> $ref)</code>
+    </h3>
+    <div class="details">
+        <p>Set the mask reference</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="Validator\str">str</abbr></td>
+                <td>$ref</td>
+                <td>The reference of the validation mask</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>object</td>
+            <td>$this for method chaining</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setPcreOptions">
+        <div class="location">at line 112</div>
+        <code>            public            object
+    <strong>setPcreOptions</strong>(<abbr title="Validator\str">str</abbr> $opts)</code>
+    </h3>
+    <div class="details">
+        <p>Set the PCRE options</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="Validator\str">str</abbr></td>
+                <td>$opts</td>
+                <td>The options used for the PCRE mask construction</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>object</td>
+            <td>$this for method chaining</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setPcreDelimiter">
+        <div class="location">at line 124</div>
+        <code>            public            object
+    <strong>setPcreDelimiter</strong>(<abbr title="Validator\str">str</abbr> $delim)</code>
+    </h3>
+    <div class="details">
+        <p>Set the PCRE delimiter</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="Validator\str">str</abbr></td>
+                <td>$delim</td>
+                <td>The delimiter used for PCRE mask construction</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>object</td>
+            <td>$this for method chaining</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setPregQuote">
+        <div class="location">at line 136</div>
+        <code>            public            object
+    <strong>setPregQuote</strong>(bool $protect)</code>
+    </h3>
+    <div class="details">
+        <p>Set the protection on mask</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>bool</td>
+                <td>$protect</td>
+                <td>The protection value to use 'preg_quote' protection on mask</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>object</td>
+            <td>$this for method chaining</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_validate">
+        <div class="location">at line 149</div>
+        <code>            public            bool
+    <strong>validate</strong>(string $value, bool $send_errors = false)</code>
+    </h3>
+    <div class="details">
+        <p>Process validation</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td>The string to validate</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$send_errors</td>
+                <td>Does the function must throw exceptions on validation failures ?</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>TRUE if $value pass the length validation</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_sanitize">
+        <div class="location">at line 177</div>
+        <code>            public            <abbr title="Validator\misc">misc</abbr>
+    <strong>sanitize</strong>(<abbr title="Validator\misc">misc</abbr> $value)</code>
+    </h3>
+    <div class="details">
+        <p>Try to make $value pass the validation</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="Validator\misc">misc</abbr></td>
+                <td>$value</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><abbr title="Validator\misc">misc</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>
