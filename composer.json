@@ -4,7 +4,7 @@
     "description": "PHP validators for RFC compliance",
     "keywords": [ "validator" ],
     "homepage": "http://github.com/atelierspierrot/validators",
-    "version": "0.0.1",
+    "version": "0.0.1-dev",
     "license": "GPL-3.0",
     "authors": [{
             "name": "Les Ateliers Pierrot & contributors",
