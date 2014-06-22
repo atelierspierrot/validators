@@ -14,29 +14,27 @@ namespace Validator;
  *
  * Construction of a validator class
  *
- * @author 		Piero Wbmstr <me@e-piwi.fr>
+ * @author  Piero Wbmstr <me@e-piwi.fr>
  */
 interface ValidatorInterface
 {
 
-	/**
-	 * Process validation, must return a boolean
-	 *
-	 * @param string $value The value to validate
-	 * @param bool $send_errors Does the function must throw exceptions on validation failures ?
-	 *
-	 * @return bool TRUE if $value pass the validation
-	 */
-	public function validate($value, $send_errors = false);
+    /**
+     * Process validation, must return a boolean
+     *
+     * @param   string  $value          The value to validate
+     * @param   bool    $send_errors    Does the function must throw exceptions on validation failures ?
+     * @return  bool    TRUE if `$value` passes the validation
+     */
+    public function validate($value, $send_errors = false);
 
-	/**
-	 * Try to make $value pass the validation
-	 *
-	 * @param misc $value
-	 *
-	 * @return misc
-	 */
-	public function sanitize($value);
+    /**
+     * Try to make `$value` pass the validation
+     *
+     * @param   mixed   $value
+     * @return  mixed
+     */
+    public function sanitize($value);
 
 }
 

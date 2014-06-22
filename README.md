@@ -78,9 +78,9 @@ A set of [PHP Unit](http://phpunit.de/manual/current/en/index.html) tests can be
 
 >    Validators
 
->    https://github.com/atelierspierrot/validators
+>    http://github.com/atelierspierrot/validators
 
->    Copyleft 2013, Pierre Cassat and contributors
+>    Copyleft 2013-2014, Pierre Cassat and contributors
 
 >    Licensed under the GPL Version 3 license.
 
