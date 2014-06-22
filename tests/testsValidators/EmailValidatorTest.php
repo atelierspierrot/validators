@@ -21,7 +21,8 @@ class EmailValidatorTest extends \PHPUnit_Framework_TestCase
         'a.little.lengthy.but.fine@dept.example.com',
         'disposable.style.email.with+symbol@example.com',
         'user@[IPv6:2001:db8:1ff::a0b:dbd0]',
-    //	'0@a',
+    //  '0@a',
+/*
         'postbox@com', // top-level domains are valid hostnames
         '!#$%&\'*+-/=?^_`{}|~@example.org',
         'much."more unusual"."thanever"@example.com',
@@ -30,13 +31,14 @@ class EmailValidatorTest extends \PHPUnit_Framework_TestCase
         '"very.(),:;<>[]\".VERY.\"very@\\ \"very\".unusual"@strange.example.com',
         '"()<>[]:,;@\\\"!#$%&\'*+-/=?^_\`{}| ~  ? ^_`{}|~.a"@example.org',
         '""@example.org'
+*/
     );
     //Invalid email addresses
     public $str_notok = array(
-    //	'Abc.example.com', // (an @ character must separate the local and domain parts)
-    //	'Abc.@example.com', // (character dot(.) is last in local part)
-    //	'Abc..123@example.com', // (character dot(.) is double)
-    //	'-sdfqsdf@example.com', // (no hyphen first)
+    //  'Abc.example.com', // (an @ character must separate the local and domain parts)
+    //  'Abc.@example.com', // (character dot(.) is last in local part)
+    //  'Abc..123@example.com', // (character dot(.) is double)
+    //  '-sdfqsdf@example.com', // (no hyphen first)
         'A@b@c@example.com', // (only one @ is allowed outside quotation marks)
         'a"b(c)d,e:f;g<h>i[j\k]l@example.com', // (none of the special characters in this local part is allowed outside quotation marks)
         'just"not"right@example.com', // (quoted strings must be dot separated, or the only element making up the local-part)
