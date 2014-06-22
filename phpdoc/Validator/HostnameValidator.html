@@ -40,7 +40,7 @@
             <table>
                     <tr>
                 <td class="type">
-                    object
+                    <a href="../Validator/AbstractMasksValidatorHelper.html"><abbr title="Validator\AbstractMasksValidatorHelper">AbstractMasksValidatorHelper</abbr></a>
                 </td>
                 <td class="last">
                     <a href="#method_setMasks">setMasks</a>(array $masks)
@@ -50,7 +50,7 @@
             </tr>
                     <tr>
                 <td class="type">
-                    object
+                    <a href="../Validator/AbstractMasksValidatorHelper.html"><abbr title="Validator\AbstractMasksValidatorHelper">AbstractMasksValidatorHelper</abbr></a>
                 </td>
                 <td class="last">
                     <a href="#method_addMask">addMask</a>(string $mask_name, string $mask)
@@ -84,7 +84,7 @@
                 </td>
                 <td class="last">
                     <a href="#method___construct">__construct</a>()
-                    <p>Constructor : register usefull masks</p>
+                    <p>Constructor : register useful masks</p>
                 </td>
                 <td></td>
             </tr>
@@ -100,10 +100,10 @@
             </tr>
                     <tr>
                 <td class="type">
-                    <abbr title="Validator\misc">misc</abbr>
+                    mixed
                 </td>
                 <td class="last">
-                    <a href="#method_sanitize">sanitize</a>(<abbr title="Validator\misc">misc</abbr> $value)
+                    <a href="#method_sanitize">sanitize</a>(mixed $value)
                     <p>Try to make $value pass the validation</p>
                 </td>
                 <td></td>
@@ -124,8 +124,8 @@
         <h2>Details</h2>
 
                         <h3 id="method_setMasks">
-        <div class="location">in <a href="../Validator/AbstractMasksValidatorHelper.html#method_setMasks"><abbr title="Validator\AbstractMasksValidatorHelper">AbstractMasksValidatorHelper</abbr></a> at line 32</div>
-        <code>            public            object
+        <div class="location">in <a href="../Validator/AbstractMasksValidatorHelper.html#method_setMasks"><abbr title="Validator\AbstractMasksValidatorHelper">AbstractMasksValidatorHelper</abbr></a> at line 31</div>
+        <code>            public            <a href="../Validator/AbstractMasksValidatorHelper.html"><abbr title="Validator\AbstractMasksValidatorHelper">AbstractMasksValidatorHelper</abbr></a>
     <strong>setMasks</strong>(array $masks)</code>
     </h3>
     <div class="details">
@@ -148,8 +148,9 @@
 
                     <table>
         <tr>
-            <td>object</td>
-            <td>$this for method chaining</td>
+            <td><a href="../Validator/AbstractMasksValidatorHelper.html"><abbr title="Validator\AbstractMasksValidatorHelper">AbstractMasksValidatorHelper</abbr></a></td>
+            <td>
+</td>
         </tr>
     </table>
 
@@ -159,8 +160,8 @@
     </div>
 
                 <h3 id="method_addMask">
-        <div class="location">in <a href="../Validator/AbstractMasksValidatorHelper.html#method_addMask"><abbr title="Validator\AbstractMasksValidatorHelper">AbstractMasksValidatorHelper</abbr></a> at line 46</div>
-        <code>            public            object
+        <div class="location">in <a href="../Validator/AbstractMasksValidatorHelper.html#method_addMask"><abbr title="Validator\AbstractMasksValidatorHelper">AbstractMasksValidatorHelper</abbr></a> at line 44</div>
+        <code>            public            <a href="../Validator/AbstractMasksValidatorHelper.html"><abbr title="Validator\AbstractMasksValidatorHelper">AbstractMasksValidatorHelper</abbr></a>
     <strong>addMask</strong>(string $mask_name, string $mask)</code>
     </h3>
     <div class="details">
@@ -188,8 +189,9 @@
 
                     <table>
         <tr>
-            <td>object</td>
-            <td>$this for method chaining</td>
+            <td><a href="../Validator/AbstractMasksValidatorHelper.html"><abbr title="Validator\AbstractMasksValidatorHelper">AbstractMasksValidatorHelper</abbr></a></td>
+            <td>
+</td>
         </tr>
     </table>
 
@@ -199,7 +201,7 @@
     </div>
 
                 <h3 id="method_getMasks">
-        <div class="location">in <a href="../Validator/AbstractMasksValidatorHelper.html#method_getMasks"><abbr title="Validator\AbstractMasksValidatorHelper">AbstractMasksValidatorHelper</abbr></a> at line 57</div>
+        <div class="location">in <a href="../Validator/AbstractMasksValidatorHelper.html#method_getMasks"><abbr title="Validator\AbstractMasksValidatorHelper">AbstractMasksValidatorHelper</abbr></a> at line 55</div>
         <code>            public            array
     <strong>getMasks</strong>()</code>
     </h3>
@@ -224,7 +226,7 @@
     </div>
 
                 <h3 id="method_getMask">
-        <div class="location">in <a href="../Validator/AbstractMasksValidatorHelper.html#method_getMask"><abbr title="Validator\AbstractMasksValidatorHelper">AbstractMasksValidatorHelper</abbr></a> at line 69</div>
+        <div class="location">in <a href="../Validator/AbstractMasksValidatorHelper.html#method_getMask"><abbr title="Validator\AbstractMasksValidatorHelper">AbstractMasksValidatorHelper</abbr></a> at line 66</div>
         <code>            public            string
     <strong>getMask</strong>(string $mask_name)</code>
     </h3>
@@ -264,7 +266,7 @@
     <strong>__construct</strong>()</code>
     </h3>
     <div class="details">
-        <p>Constructor : register usefull masks</p>
+        <p>Constructor : register useful masks</p>
         <p>
 </p>
         <div class="tags">
@@ -275,7 +277,7 @@
     </div>
 
                 <h3 id="method_validate">
-        <div class="location">at line 50</div>
+        <div class="location">at line 51</div>
         <code>            public            bool
     <strong>validate</strong>(string $value, bool $send_errors = false)</code>
     </h3>
@@ -290,7 +292,7 @@
                     <tr>
                 <td>string</td>
                 <td>$value</td>
-                <td>The email address to validate</td>
+                <td>The local part of an email address to validate</td>
             </tr>
                     <tr>
                 <td>bool</td>
@@ -305,19 +307,28 @@
                     <table>
         <tr>
             <td>bool</td>
-            <td>TRUE if $value pass the Email mask</td>
+            <td>TRUE if <code>$value</code> pass the Email validation</td>
         </tr>
     </table>
 
             
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="http://php.net/Exception"><abbr title="Exception">Exception</abbr></a></td>
+                <td>for each invalid part if <code>$send_errors</code> is true</td>
+            </tr>
+            </table>
+
             
                     </div>
     </div>
 
                 <h3 id="method_sanitize">
-        <div class="location">at line 111</div>
-        <code>            public            <abbr title="Validator\misc">misc</abbr>
-    <strong>sanitize</strong>(<abbr title="Validator\misc">misc</abbr> $value)</code>
+        <div class="location">at line 116</div>
+        <code>            public            mixed
+    <strong>sanitize</strong>(mixed $value)</code>
     </h3>
     <div class="details">
         <p>Try to make $value pass the validation</p>
@@ -328,7 +339,7 @@
 
                     <table>
                     <tr>
-                <td><abbr title="Validator\misc">misc</abbr></td>
+                <td>mixed</td>
                 <td>$value</td>
                 <td>
 </td>
@@ -340,7 +351,7 @@
 
                     <table>
         <tr>
-            <td><abbr title="Validator\misc">misc</abbr></td>
+            <td>mixed</td>
             <td>
 </td>
         </tr>
@@ -352,7 +363,7 @@
     </div>
 
                 <h3 id="method_setMustPass">
-        <div class="location">at line 118</div>
+        <div class="location">at line 123</div>
         <code>            public            
     <strong>setMustPass</strong>($ref)</code>
     </h3>

@@ -43,7 +43,7 @@
                     
                 </td>
                 <td class="last">
-                    <a href="#method___construct">__construct</a>(<abbr title="Validator\str">str</abbr> $mask = null, <abbr title="Validator\str">str</abbr> $ref = null, array $options = array())
+                    <a href="#method___construct">__construct</a>(string $mask = null, string $ref = null, array $options = array())
                     <p>Constructor</p>
                 </td>
                 <td></td>
@@ -53,7 +53,7 @@
                     object
                 </td>
                 <td class="last">
-                    <a href="#method_setMask">setMask</a>(<abbr title="Validator\str">str</abbr> $mask, bool $protect = null)
+                    <a href="#method_setMask">setMask</a>(string $mask, bool $protect = null)
                     <p>Set the mask to test for values The mask can be escaped by the 'preg_quote' function setting the second argument on TRUE.</p>
                 </td>
                 <td></td>
@@ -63,7 +63,7 @@
                     object
                 </td>
                 <td class="last">
-                    <a href="#method_setMaskReference">setMaskReference</a>(<abbr title="Validator\str">str</abbr> $ref)
+                    <a href="#method_setMaskReference">setMaskReference</a>(string $ref)
                     <p>Set the mask reference</p>
                 </td>
                 <td></td>
@@ -73,7 +73,7 @@
                     object
                 </td>
                 <td class="last">
-                    <a href="#method_setPcreOptions">setPcreOptions</a>(<abbr title="Validator\str">str</abbr> $opts)
+                    <a href="#method_setPcreOptions">setPcreOptions</a>(string $opts)
                     <p>Set the PCRE options</p>
                 </td>
                 <td></td>
@@ -83,7 +83,7 @@
                     object
                 </td>
                 <td class="last">
-                    <a href="#method_setPcreDelimiter">setPcreDelimiter</a>(<abbr title="Validator\str">str</abbr> $delim)
+                    <a href="#method_setPcreDelimiter">setPcreDelimiter</a>(string $delim)
                     <p>Set the PCRE delimiter</p>
                 </td>
                 <td></td>
@@ -110,10 +110,10 @@
             </tr>
                     <tr>
                 <td class="type">
-                    <abbr title="Validator\misc">misc</abbr>
+                    mixed
                 </td>
                 <td class="last">
-                    <a href="#method_sanitize">sanitize</a>(<abbr title="Validator\misc">misc</abbr> $value)
+                    <a href="#method_sanitize">sanitize</a>(mixed $value)
                     <p>Try to make $value pass the validation</p>
                 </td>
                 <td></td>
@@ -126,7 +126,7 @@
                         <h3 id="method___construct">
         <div class="location">at line 53</div>
         <code>            public            
-    <strong>__construct</strong>(<abbr title="Validator\str">str</abbr> $mask = null, <abbr title="Validator\str">str</abbr> $ref = null, array $options = array())</code>
+    <strong>__construct</strong>(string $mask = null, string $ref = null, array $options = array())</code>
     </h3>
     <div class="details">
         <p>Constructor</p>
@@ -137,12 +137,12 @@
 
                     <table>
                     <tr>
-                <td><abbr title="Validator\str">str</abbr></td>
+                <td>string</td>
                 <td>$mask</td>
                 <td>The mask to test</td>
             </tr>
                     <tr>
-                <td><abbr title="Validator\str">str</abbr></td>
+                <td>string</td>
                 <td>$ref</td>
                 <td>The mask reference</td>
             </tr>
@@ -162,7 +162,7 @@
                 <h3 id="method_setMask">
         <div class="location">at line 85</div>
         <code>            public            object
-    <strong>setMask</strong>(<abbr title="Validator\str">str</abbr> $mask, bool $protect = null)</code>
+    <strong>setMask</strong>(string $mask, bool $protect = null)</code>
     </h3>
     <div class="details">
         <p>Set the mask to test for values The mask can be escaped by the 'preg_quote' function setting the second argument on TRUE.</p>
@@ -173,7 +173,7 @@
 
                     <table>
                     <tr>
-                <td><abbr title="Validator\str">str</abbr></td>
+                <td>string</td>
                 <td>$mask</td>
                 <td>The mask to test in PCRE</td>
             </tr>
@@ -202,7 +202,7 @@
                 <h3 id="method_setMaskReference">
         <div class="location">at line 100</div>
         <code>            public            object
-    <strong>setMaskReference</strong>(<abbr title="Validator\str">str</abbr> $ref)</code>
+    <strong>setMaskReference</strong>(string $ref)</code>
     </h3>
     <div class="details">
         <p>Set the mask reference</p>
@@ -213,7 +213,7 @@
 
                     <table>
                     <tr>
-                <td><abbr title="Validator\str">str</abbr></td>
+                <td>string</td>
                 <td>$ref</td>
                 <td>The reference of the validation mask</td>
             </tr>
@@ -237,7 +237,7 @@
                 <h3 id="method_setPcreOptions">
         <div class="location">at line 112</div>
         <code>            public            object
-    <strong>setPcreOptions</strong>(<abbr title="Validator\str">str</abbr> $opts)</code>
+    <strong>setPcreOptions</strong>(string $opts)</code>
     </h3>
     <div class="details">
         <p>Set the PCRE options</p>
@@ -248,7 +248,7 @@
 
                     <table>
                     <tr>
-                <td><abbr title="Validator\str">str</abbr></td>
+                <td>string</td>
                 <td>$opts</td>
                 <td>The options used for the PCRE mask construction</td>
             </tr>
@@ -272,7 +272,7 @@
                 <h3 id="method_setPcreDelimiter">
         <div class="location">at line 124</div>
         <code>            public            object
-    <strong>setPcreDelimiter</strong>(<abbr title="Validator\str">str</abbr> $delim)</code>
+    <strong>setPcreDelimiter</strong>(string $delim)</code>
     </h3>
     <div class="details">
         <p>Set the PCRE delimiter</p>
@@ -283,7 +283,7 @@
 
                     <table>
                     <tr>
-                <td><abbr title="Validator\str">str</abbr></td>
+                <td>string</td>
                 <td>$delim</td>
                 <td>The delimiter used for PCRE mask construction</td>
             </tr>
@@ -340,7 +340,7 @@
     </div>
 
                 <h3 id="method_validate">
-        <div class="location">at line 149</div>
+        <div class="location">at line 150</div>
         <code>            public            bool
     <strong>validate</strong>(string $value, bool $send_errors = false)</code>
     </h3>
@@ -355,7 +355,7 @@
                     <tr>
                 <td>string</td>
                 <td>$value</td>
-                <td>The string to validate</td>
+                <td>The local part of an email address to validate</td>
             </tr>
                     <tr>
                 <td>bool</td>
@@ -370,19 +370,28 @@
                     <table>
         <tr>
             <td>bool</td>
-            <td>TRUE if $value pass the length validation</td>
+            <td>TRUE if <code>$value</code> pass the Email validation</td>
         </tr>
     </table>
 
             
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="http://php.net/Exception"><abbr title="Exception">Exception</abbr></a></td>
+                <td>for each invalid part if <code>$send_errors</code> is true</td>
+            </tr>
+            </table>
+
             
                     </div>
     </div>
 
                 <h3 id="method_sanitize">
-        <div class="location">at line 177</div>
-        <code>            public            <abbr title="Validator\misc">misc</abbr>
-    <strong>sanitize</strong>(<abbr title="Validator\misc">misc</abbr> $value)</code>
+        <div class="location">at line 178</div>
+        <code>            public            mixed
+    <strong>sanitize</strong>(mixed $value)</code>
     </h3>
     <div class="details">
         <p>Try to make $value pass the validation</p>
@@ -393,7 +402,7 @@
 
                     <table>
                     <tr>
-                <td><abbr title="Validator\misc">misc</abbr></td>
+                <td>mixed</td>
                 <td>$value</td>
                 <td>
 </td>
@@ -405,7 +414,7 @@
 
                     <table>
         <tr>
-            <td><abbr title="Validator\misc">misc</abbr></td>
+            <td>mixed</td>
             <td>
 </td>
         </tr>
