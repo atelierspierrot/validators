@@ -80,7 +80,7 @@ A set of [PHP Unit](http://phpunit.de/manual/current/en/index.html) tests can be
 
 >    http://github.com/atelierspierrot/validators
 
->    Copyleft 2013-2014, Pierre Cassat and contributors
+>    Copyleft (ↄ) 2013-2015 Pierre Cassat and contributors
 
 >    Licensed under the GPL Version 3 license.
 
