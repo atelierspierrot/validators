@@ -3,6 +3,7 @@ Validators
 
 A PHP validators package to test RFC's compliance.
 
+![validation](https://travis-ci.org/atelierspierrot/validators.svg?branch=master)
 
 ## Usage
 
