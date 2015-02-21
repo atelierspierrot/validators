@@ -34,7 +34,7 @@ class InternetProtocolValidator
 {
 
     /**
-     * The version of the Internet Protocol to validate
+     * @var string  The version of the Internet Protocol to validate
      */
      protected $version='v4';
 
@@ -57,8 +57,8 @@ class InternetProtocolValidator
     /**
      * Set the version of the protocol to use
      *
-     * @param string $version The version number of the protocol, must be a constructor's masks reference
-     * @return object $this for method chaining
+     * @param   string  $version The version number of the protocol, must be a constructor's masks reference
+     * @return  $this
      */
     public function setVersion($version)
     {
@@ -111,9 +111,13 @@ class InternetProtocolValidator
 
     /**
      * Try to make $value pass the validation
+     *
+     * @param string $value
+     * @return string
      */
     public function sanitize($value)
     {
+        return $value;
     }
 
 }

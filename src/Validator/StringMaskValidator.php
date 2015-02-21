@@ -33,36 +33,36 @@ class StringMaskValidator
 {
 
     /**
-     * The mask to test
+     * @var string The mask to test
      */
     protected $mask;
 
     /**
-     * The mask reference (an RFC reference for example)
+     * @var string The mask reference (an RFC reference for example)
      */
     protected $mask_reference;
 
     /**
-     * The PCRE options for validation (by default, case insensitive)
+     * @var string The PCRE options for validation (by default, case insensitive)
      */
     protected $pcre_options = 'i';
 
     /**
-     * The PCRE delimiter (by default a slash)
+     * @var string The PCRE delimiter (by default a slash)
      */
     protected $pcre_delimiter = '/';
 
     /**
-     * PCRE quoting protection on mask
+     * @var string PCRE quoting protection on mask
      */
     protected $preg_quote = false;
 
     /**
      * Constructor
      *
-     * @param string $mask The mask to test
-     * @param string $ref The mask reference
-     * @param array $options A set of options to set the object properties
+     * @param string    $mask   The mask to test
+     * @param string    $ref    The mask reference
+     * @param array     $options A set of options to set the object properties
      */
     public function __construct($mask = null, $ref = null, $options = array())
     {
@@ -83,8 +83,6 @@ class StringMaskValidator
     {
         if (true===$this->preg_quote) {
             $this->mask = preg_quote($this->mask);
-        } else {
-            $this->mask = $this->mask;
         }
     }
 
@@ -188,9 +186,13 @@ class StringMaskValidator
 
     /**
      * Try to make $value pass the validation
+     *
+     * @param string $value
+     * @return string
      */
     public function sanitize($value)
     {
+        return $value;
     }
 
     /**
@@ -199,6 +201,7 @@ class StringMaskValidator
      * @param   string $first The first parameter must be the global error string
      * @param   string $second The second parameter must be an alternative part of the error string, added if the mask reference is known
      * @param   mixed $others The rest of the parameters are taken and passed to the finale 'sprintf' function
+     * @return  mixed
      */
     protected function buildErrorString()
     {

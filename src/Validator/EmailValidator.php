@@ -34,13 +34,13 @@ class EmailValidator
 {
 
     /**
-     * Which standard must the email pass ?
+     * @var string Which standard must the email pass ?
      * It is by default set on RFC2822 as the RFC5322 mask is not fully functional
      */
      protected $must_pass = 'RFC2822';
 
     /**
-     * Defined standards list
+     * @var array Defined standards list
      * They are indexed to pass them in that order
      */
      static $standards_list = array(
@@ -78,9 +78,10 @@ class EmailValidator
     /**
      * Process validation
      *
-     * @param string $value The email address to validate
-     * @param bool $send_errors Does the function must throw exceptions on validation failures ?
-     * @return bool TRUE if $value pass the Email validation
+     * @param   string  $value          The email address to validate
+     * @param   bool    $send_errors    Does the function must throw exceptions on validation failures ?
+     * @return  bool    TRUE if $value pass the Email validation
+     * @throws  \Exception if the email address does not contain an "at" sign ("@")
      */
     public function validate($value, $send_errors = false)
     {
@@ -110,9 +111,13 @@ class EmailValidator
 
     /**
      * Try to make $value pass the validation
+     *
+     * @param string $value
+     * @return string
      */
     public function sanitize($value)
     {
+        return $value;
     }
 
     /**
@@ -228,6 +233,12 @@ class EmailValidator
         return true;
     }
 
+    /**
+     * Defines the RFC to validate
+     *
+     * @param   string  $ref
+     * @throws  \Exception if the `$ref` is not a known RFC
+     */
     public function setMustPass( $ref )
     {
         if (null!==$this->getMask($ref)) {

@@ -34,13 +34,13 @@ class StringLengthValidator
 {
 
     /**
-     * A minimum string length
+     * @var int A minimum string length
      * By default, this value is set on "0" so that an empty string can pass the validation
      */
     protected $min_length=0;
 
     /**
-     * A maximum string length
+     * @var int A maximum string length
      * By default, this value is set on "256" to comply with the common standards
      */
     protected $max_length=256;
@@ -53,8 +53,12 @@ class StringLengthValidator
      */
     public function __construct($min = null, $max = null)
     {
-        if (!is_null($min)) $this->setMinLength( $min );
-        if (!is_null($max)) $this->setMaxLength( $max );
+        if (!is_null($min)) {
+            $this->setMinLength( $min );
+        }
+        if (!is_null($max)) {
+            $this->setMaxLength( $max );
+        }
     }
 
     /**
@@ -110,9 +114,13 @@ class StringLengthValidator
 
     /**
      * Try to make $value pass the validation
+     *
+     * @param string $value
+     * @return string
      */
     public function sanitize($value)
     {
+        return $value;
     }
 
 }
