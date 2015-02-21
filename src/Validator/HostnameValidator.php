@@ -34,7 +34,7 @@ class HostnameValidator
 {
 
     /**
-     * Which standard must the email pass ?
+     * @var string  Which standard must the email pass ?
      * It is by default set on RFC1123 (more permissive)
      */
      protected $must_pass = 'RFC1123';
@@ -126,13 +126,20 @@ class HostnameValidator
 
     /**
      * Try to make $value pass the validation
+     *
+     * @param string $value
+     * @return string
      */
     public function sanitize($value)
     {
+        return $value;
     }
 
     /**
-     * Set the reference to use for validation
+     * Defines the RFC to validate
+     *
+     * @param   string  $ref
+     * @throws  \Exception if the `$ref` is not a known RFC
      */
     public function setMustPass($ref)
     {
