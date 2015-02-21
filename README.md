@@ -1,9 +1,9 @@
 Validators
 ==========
 
+[![Build Status](https://travis-ci.org/atelierspierrot/validators.svg?branch=master)](https://travis-ci.org/atelierspierrot/validators)
+[![documentation](http://img.ateliers-pierrot-static.fr/readthe-doc.png)](http://docs.ateliers-pierrot.fr/validators/)
 A PHP validators package to test RFC's compliance.
-
-![validation](https://travis-ci.org/atelierspierrot/validators.svg?branch=master)
 
 ## Usage
 
