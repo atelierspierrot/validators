@@ -16,19 +16,20 @@ All validators must implement the `\Validator\ValidatorInterface` which defines 
 
 Example usage of the `\Validator\EmailValidator` (use the same process for each validator):
 
-    $thing = 'my.address@email.com';
+```php
+$thing = 'my.address@email.com';
 
-    $v = new \Validator\EmailValidator();
-    if ($v->validate($thing)) {
-        // $thing is OK ...
+$v = new \Validator\EmailValidator();
+if ($v->validate($thing)) {
+    // $thing is OK ...
 
-    } else {
-        // $thing is KO ...
+} else {
+    // $thing is KO ...
 
-        $new_thing = $v->sanitize($thing);
-        // $new_thing must be OK ...
-    }
-
+    $new_thing = $v->sanitize($thing);
+    // $new_thing must be OK ...
+}
+```
 
 ## Installation
 
@@ -45,18 +46,21 @@ from Github.
 Then, to use the package classes, you just need to register the `Validator` namespace directory
 using the [SplClassLoader](https://gist.github.com/jwage/221634) or any other custom autoloader:
 
-    require_once '.../src/SplClassLoader.php'; // if required, a copy is proposed in the package
-    $classLoader = new SplClassLoader('Validator', '/path/to/package/src');
-    $classLoader->register();
+```php
+require_once '.../src/SplClassLoader.php'; // if required, a copy is proposed in the package
+$classLoader = new SplClassLoader('Validator', '/path/to/package/src');
+$classLoader->register();
+```
 
 If you are a [Composer](http://getcomposer.org/) user, just add the package to your requirements
 in your `composer.json`:
 
-    "require": {
-        ...
-        "atelierspierrot/validators": "dev-master"
-    }
-
+```json
+"require": {
+    "your/deps": "*",
+    "atelierspierrot/validators": "dev-master"
+}
+```
 
 ## Development
 
@@ -81,15 +85,15 @@ A set of [PHP Unit](http://phpunit.de/manual/current/en/index.html) tests can be
 
 >    http://github.com/atelierspierrot/validators
 
->    Copyleft (ↄ) 2013-2015 Pierre Cassat and contributors
+>    Copyright (c) 2013-2015 Pierre Cassat and contributors
 
->    Licensed under the GPL Version 3 license.
+>    Licensed under the Apache 2.0 license.
 
->    http://opensource.org/licenses/GPL-3.0
+>    http://www.apache.org/licenses/LICENSE-2.0
 
 >    ----
 
 >    Les Ateliers Pierrot - Paris, France
 
->    <www.ateliers-pierrot.fr> - <contact@ateliers-pierrot.fr>
+>    <http://www.ateliers-pierrot.fr/> - <contact@ateliers-pierrot.fr>
 
