@@ -2,10 +2,12 @@ Validators
 ==========
 
 [![Build Status](https://travis-ci.org/atelierspierrot/validators.svg?branch=master)](https://travis-ci.org/atelierspierrot/validators)
-[![documentation](http://img.ateliers-pierrot-static.fr/readthe-doc.png)](http://docs.ateliers-pierrot.fr/validators/)
+[![documentation](http://img.ateliers-pierrot-static.fr/read-the-doc.svg)](http://docs.ateliers-pierrot.fr/validators/)
 A PHP validators package to test RFC's compliance.
 
-## Usage
+
+Usage
+-----
 
 All validators must implement the `\Validator\ValidatorInterface` which defines two methods:
 
@@ -31,55 +33,26 @@ if ($v->validate($thing)) {
 }
 ```
 
-## Installation
 
-You can use this package in your work in many ways.
+Installation
+------------
 
-First, you can clone the [GitHub](https://github.com/atelierspierrot/validators) repository
-and include it "as is" in your poject:
+For a complete information about how to install this package and load its namespace, 
+please have a look at [our *USAGE* documentation](http://github.com/atelierspierrot/atelierspierrot/blob/master/USAGE.md).
 
-    https://github.com/atelierspierrot/validators
-
-You can also download an [archive](https://github.com/atelierspierrot/validators/downloads)
-from Github.
-
-Then, to use the package classes, you just need to register the `Validator` namespace directory
-using the [SplClassLoader](https://gist.github.com/jwage/221634) or any other custom autoloader:
-
-```php
-require_once '.../src/SplClassLoader.php'; // if required, a copy is proposed in the package
-$classLoader = new SplClassLoader('Validator', '/path/to/package/src');
-$classLoader->register();
-```
-
-If you are a [Composer](http://getcomposer.org/) user, just add the package to your requirements
-in your `composer.json`:
+If you are a [Composer](http://getcomposer.org/) user, just add the package to the 
+requirements of your project's `composer.json` manifest file:
 
 ```json
-"require": {
-    "your/deps": "*",
-    "atelierspierrot/validators": "dev-master"
-}
+"atelierspierrot/validators": "@stable"
 ```
 
-## Development
-
-To install all PHP packages for development, just run:
-
-    ~$ composer install --dev
-
-A documentation can be generated with [Sami](https://github.com/fabpot/Sami) running:
-
-    ~$ php vendor/sami/sami/sami.php render sami.config.php
-
-The latest version of this documentation is available online at <http://docs.ateliers-pierrot.fr/validators/>.
-
-A set of [PHP Unit](http://phpunit.de/manual/current/en/index.html) tests can be run running:
-
-    ~$ php vendor/phpunit/phpunit/phpunit.php
+You can use a specific release or the latest release of a major version using the appropriate
+[version constraint](http://getcomposer.org/doc/01-basic-usage.md#package-versions).
 
 
-## Author & License
+Author & License
+----------------
 
 >    Validators
 
