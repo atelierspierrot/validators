@@ -25,7 +25,7 @@ namespace Validator;
 /**
  * Email address validator
  *
- * @author  Piero Wbmstr <me@e-piwi.fr>
+ * @author  piwi <me@e-piwi.fr>
  */
 class HostnameValidator
     extends AbstractMasksValidatorHelper
