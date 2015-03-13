@@ -15,9 +15,9 @@
     }],
     "require": { "php": ">=5.3.0" },
     "require-dev": {
-        "sami/sami": "dev-master",
-        "phpunit/phpunit": "3.7.*",
-        "phpmd/phpmd" : "1.4.*"
+        "sami/sami": "@stable",
+        "phpunit/phpunit": "@stable",
+        "phpmd/phpmd" : "@stable"
     },
     "autoload": { "psr-0": { "Validator": "src" } },
     "extra": {

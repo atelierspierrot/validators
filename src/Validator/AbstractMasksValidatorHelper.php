@@ -25,7 +25,7 @@ namespace Validator;
 /**
  * The application validator model
  *
- * @author  Piero Wbmstr <me@e-piwi.fr>
+ * @author  piwi <me@e-piwi.fr>
  */
 abstract class AbstractMasksValidatorHelper
 {

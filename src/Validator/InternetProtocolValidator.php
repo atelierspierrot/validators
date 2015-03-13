@@ -25,7 +25,7 @@ namespace Validator;
 /**
  * IP address validator
  *
- * @author  Piero Wbmstr <me@e-piwi.fr>
+ * @author  piwi <me@e-piwi.fr>
  */
 class InternetProtocolValidator
     extends AbstractMasksValidatorHelper
