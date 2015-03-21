@@ -1,8 +1,10 @@
 Validators
 ==========
 
-[![Build Status](https://travis-ci.org/atelierspierrot/validators.svg?branch=master)](https://travis-ci.org/atelierspierrot/validators)
+[![Build Status](http://travis-ci.org/atelierspierrot/validators.svg?branch=master)](http://travis-ci.org/atelierspierrot/validators)
+[![Code Climate](http://codeclimate.com/github/atelierspierrot/validators/badges/gpa.svg)](http://codeclimate.com/github/atelierspierrot/validators)
 [![documentation](http://img.ateliers-pierrot-static.fr/read-the-doc.svg)](http://docs.ateliers-pierrot.fr/validators/)
+
 A PHP validators package to test RFC's compliance.
 
 
