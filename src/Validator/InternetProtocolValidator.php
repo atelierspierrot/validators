@@ -2,7 +2,7 @@
 /**
  * This file is part of the Validators package.
  *
- * Copyright (c) 2013-2015 Pierre Cassat <me@e-piwi.fr> and contributors
+ * Copyright (c) 2013-2016 Pierre Cassat <me@e-piwi.fr> and contributors
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -42,15 +42,17 @@ class InternetProtocolValidator
      *
      * @param string $version
      */
-    public function __construct( $version=null )
+    public function __construct($version=null)
     {
         $this->addMask('v4', '(?:[0-9]{1,3}\.){3}[0-9]{1,3}');
         $this->addMask('v4_full', '^' . $this->getMask('v4') . '$');
 
         $this->addMask('v6', '(((?=.*(::))(?!.*\3.+\3))\3?|([\dA-F]{1,4}(\3|:\b|$)|\2))(?4){5}((?4){2}|(((2[0-4]|1\d|[1-9])?\d|25[0-5])\.?\b){4})\z');
-        $this->addMask('v6_full', '^' . $this->getMask('v6') );
+        $this->addMask('v6_full', '^' . $this->getMask('v6'));
 
-        if (!is_null($version)) $this->setVersion($version);
+        if (!is_null($version)) {
+            $this->setVersion($version);
+        }
     }
 
     /**
@@ -76,9 +78,9 @@ class InternetProtocolValidator
     public function validate($value, $send_errors = false)
     {
         // the mask validation
-        $full_mask = $this->getMask( $this->version.'_full' );
-        $mask = $this->getMask( $this->version );
-        if (!strlen( $mask )) {
+        $full_mask = $this->getMask($this->version.'_full');
+        $mask = $this->getMask($this->version);
+        if (!strlen($mask)) {
             if (true===$send_errors) {
                 throw new \Exception(
                     sprintf("No mask defined in InternetProtocol validator for version %s!", $this->version)
@@ -103,7 +105,9 @@ class InternetProtocolValidator
                 }
                 return false;
             }
-        } catch (\Exception $e) { throw $e; }
+        } catch (\Exception $e) {
+            throw $e;
+        }
 
         return true;
     }
@@ -118,10 +122,9 @@ class InternetProtocolValidator
     {
         return $value;
     }
-
 }
 
-// Endfile
+
 
 /*
 //Valid IP v4

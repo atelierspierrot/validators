@@ -2,7 +2,7 @@
 /**
  * This file is part of the Validators package.
  *
- * Copyright (c) 2013-2015 Pierre Cassat <me@e-piwi.fr> and contributors
+ * Copyright (c) 2013-2016 Pierre Cassat <me@e-piwi.fr> and contributors
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -53,10 +53,10 @@ class StringLengthValidator
     public function __construct($min = null, $max = null)
     {
         if (!is_null($min)) {
-            $this->setMinLength( $min );
+            $this->setMinLength($min);
         }
         if (!is_null($max)) {
-            $this->setMaxLength( $max );
+            $this->setMaxLength($max);
         }
     }
 
@@ -96,14 +96,14 @@ class StringLengthValidator
 
         if ($_length<$this->min_length) {
             if (true===$send_errors) {
-                throw new \Exception( sprintf('The string [%s] must be at least %d character(s) long!', $value, $this->min_length) );
+                throw new \Exception(sprintf('The string [%s] must be at least %d character(s) long!', $value, $this->min_length));
             }
             return false;
         }
 
         if ($_length>$this->max_length) {
             if (true===$send_errors) {
-                throw new \Exception( sprintf('The string [%s] must not be more than %d characters long!', $value, $this->max_length) );
+                throw new \Exception(sprintf('The string [%s] must not be more than %d characters long!', $value, $this->max_length));
             }
             return false;
         }
@@ -121,7 +121,4 @@ class StringLengthValidator
     {
         return $value;
     }
-
 }
-
-// Endfile

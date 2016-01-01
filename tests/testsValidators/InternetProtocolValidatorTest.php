@@ -2,7 +2,7 @@
 /**
  * This file is part of the Validators package.
  *
- * Copyright (c) 2013-2015 Pierre Cassat <me@e-piwi.fr> and contributors
+ * Copyright (c) 2013-2016 Pierre Cassat <me@e-piwi.fr> and contributors
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -49,7 +49,7 @@ class InternetProtocolValidatorTest extends \PHPUnit_Framework_TestCase
         $v = new \Validator\InternetProtocolValidator();
 
         // true v4
-        foreach($this->ipv4_ok as $_str) {
+        foreach ($this->ipv4_ok as $_str) {
             $this->assertTrue(
                 $v->validate($_str),
                 sprintf("IP v4 validation on string: %s", $_str)
@@ -57,7 +57,7 @@ class InternetProtocolValidatorTest extends \PHPUnit_Framework_TestCase
         }
 
         // false v4
-        foreach($this->ip_notok as $_str) {
+        foreach ($this->ip_notok as $_str) {
             $this->assertFalse(
                 $v->validate($_str),
                 sprintf("IP v4 validation on string: %s", $_str)
@@ -66,7 +66,7 @@ class InternetProtocolValidatorTest extends \PHPUnit_Framework_TestCase
 
         // true v6
         $v->setVersion('v6');
-        foreach($this->ipv6_ok as $_str) {
+        foreach ($this->ipv6_ok as $_str) {
             $this->assertTrue(
                 $v->validate($_str),
                 sprintf("IP v6 validation on string: %s", $_str)
@@ -75,13 +75,11 @@ class InternetProtocolValidatorTest extends \PHPUnit_Framework_TestCase
 
         // false v6
         $v->setVersion('v6');
-        foreach($this->ip_notok as $_str) {
+        foreach ($this->ip_notok as $_str) {
             $this->assertFalse(
                 $v->validate($_str),
                 sprintf("IP v6 validation on string: %s", $_str)
             );
         }
-
     }
-    
 }

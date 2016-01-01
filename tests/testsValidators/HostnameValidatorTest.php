@@ -2,7 +2,7 @@
 /**
  * This file is part of the Validators package.
  *
- * Copyright (c) 2013-2015 Pierre Cassat <me@e-piwi.fr> and contributors
+ * Copyright (c) 2013-2016 Pierre Cassat <me@e-piwi.fr> and contributors
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -39,7 +39,7 @@ class HostnameValidatorTest extends \PHPUnit_Framework_TestCase
         'www.-.my-hostname.fr.co', // no double-dots
         'azertyuiopazertyuiopazertyuiopazertyuiopazertyuiopazertyuiopazertyuiop.com', // a label is too long
         // a hostname is too long
-        'azertyuiop.azertyuiop.azertyuiop.azertyuiop.azertyuiop.azertyuiop.azertyuiop.azertyuiop.azertyuiop.azertyuiop.azertyuiop.azertyuiop.azertyuiop.azertyuiop.azertyuiop.azertyuiop.azertyuiop.azertyuiop.azertyuiop.azertyuiop.azertyuiop.azertyuiop.azertyuiop.azertyuiop.azertyuiop', 
+        'azertyuiop.azertyuiop.azertyuiop.azertyuiop.azertyuiop.azertyuiop.azertyuiop.azertyuiop.azertyuiop.azertyuiop.azertyuiop.azertyuiop.azertyuiop.azertyuiop.azertyuiop.azertyuiop.azertyuiop.azertyuiop.azertyuiop.azertyuiop.azertyuiop.azertyuiop.azertyuiop.azertyuiop.azertyuiop',
     );
 
     public function testCreate()
@@ -47,7 +47,7 @@ class HostnameValidatorTest extends \PHPUnit_Framework_TestCase
         $v = new \Validator\HostnameValidator();
 
         // true
-        foreach($this->str_ok as $_str) {
+        foreach ($this->str_ok as $_str) {
             $this->assertTrue(
                 $v->validate($_str),
                 sprintf("Hostname validation on string: %s", $_str)
@@ -55,13 +55,11 @@ class HostnameValidatorTest extends \PHPUnit_Framework_TestCase
         }
 
         // false
-        foreach($this->str_notok as $_str) {
+        foreach ($this->str_notok as $_str) {
             $this->assertFalse(
                 $v->validate($_str),
                 sprintf("Hostname validation on string: %s", $_str)
             );
         }
-
     }
-    
 }
