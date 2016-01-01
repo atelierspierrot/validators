@@ -12,6 +12,9 @@
         <script src="../js/bootstrap.min.js"></script>
         <script src="../js/typeahead.min.js"></script>
         <script src="../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     
     
     </head>
@@ -73,7 +76,8 @@
 
     <p>    class
     <strong>StringMaskValidator</strong>        implements
-        <a href="../Validator/ValidatorInterface.html"><abbr title="Validator\ValidatorInterface">ValidatorInterface</abbr></a></p>
+        <a href="../Validator/ValidatorInterface.html"><abbr title="Validator\ValidatorInterface">ValidatorInterface</abbr></a>
+</p>
 
             <div class="description">
             <p>String mask validator</p>                    </div>
@@ -87,73 +91,93 @@
                     <div class="row">
                 <div class="col-md-2 type">
                     
+    
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method___construct">__construct</a>(string $mask = null, string $ref = null, array $options = array())
+                    <a href="#method___construct">__construct</a>(
+    string $mask = null, 
+    string $ref = null, 
+    array $options = array())
                                             <p>Constructor</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    object
+                    
+    object
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_setMask">setMask</a>(string $mask, bool $protect = null)
+                    <a href="#method_setMask">setMask</a>(
+    string $mask, 
+    bool $protect = null)
                                             <p>Set the mask to test for values
 The mask can be escaped by the 'preg_quote' function setting the second argument on TRUE.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    object
+                    
+    object
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_setMaskReference">setMaskReference</a>(string $ref)
+                    <a href="#method_setMaskReference">setMaskReference</a>(
+    string $ref)
                                             <p>Set the mask reference</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    object
+                    
+    object
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_setPcreOptions">setPcreOptions</a>(string $opts)
+                    <a href="#method_setPcreOptions">setPcreOptions</a>(
+    string $opts)
                                             <p>Set the PCRE options</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    object
+                    
+    object
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_setPcreDelimiter">setPcreDelimiter</a>(string $delim)
+                    <a href="#method_setPcreDelimiter">setPcreDelimiter</a>(
+    string $delim)
                                             <p>Set the PCRE delimiter</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    object
+                    
+    object
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_setPregQuote">setPregQuote</a>(bool $protect)
+                    <a href="#method_setPregQuote">setPregQuote</a>(
+    bool $protect)
                                             <p>Set the protection on mask</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    bool
+                    
+    bool
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_validate">validate</a>(string $value, bool $send_errors = false)
+                    <a href="#method_validate">validate</a>(
+    string $value, 
+    bool $send_errors = false)
                                             <p>Process validation</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    string
+                    
+    mixed
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_sanitize">sanitize</a>(string $value)
+                    <a href="#method_sanitize">sanitize</a>(
+    mixed $value)
                                             <p>Try to make $value pass the validation</p>                </div>
                 <div class="col-md-2"></div>
             </div>
@@ -165,9 +189,13 @@ The mask can be escaped by the 'preg_quote' function setting the second argument
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at line 67</div>
+        <div class="location">at line 66</div>
         <code>                    
-    <strong>__construct</strong>(string $mask = null, string $ref = null, array $options = array())</code>
+    
+    <strong>__construct</strong>(
+    string $mask = null, 
+    string $ref = null, 
+    array $options = array())</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -177,17 +205,20 @@ The mask can be escaped by the 'preg_quote' function setting the second argument
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$mask</td>
                 <td>The mask to test</td>
             </tr>
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$ref</td>
                 <td>The mask reference</td>
             </tr>
                     <tr>
-                <td>array</td>
+                <td>
+    array</td>
                 <td>$options</td>
                 <td>A set of options to set the object properties</td>
             </tr>
@@ -202,9 +233,12 @@ The mask can be escaped by the 'preg_quote' function setting the second argument
             </div>
                     <div class="method-item">
                     <h3 id="method_setMask">
-        <div class="location">at line 97</div>
-        <code>                    object
-    <strong>setMask</strong>(string $mask, bool $protect = null)</code>
+        <div class="location">at line 100</div>
+        <code>                    
+    object
+    <strong>setMask</strong>(
+    string $mask, 
+    bool $protect = null)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -215,12 +249,14 @@ The mask can be escaped by the 'preg_quote' function setting the second argument
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$mask</td>
                 <td>The mask to test in PCRE</td>
             </tr>
                     <tr>
-                <td>bool</td>
+                <td>
+    bool</td>
                 <td>$protect</td>
                 <td>Do we have to protect the mask ?</td>
             </tr>
@@ -231,7 +267,8 @@ The mask can be escaped by the 'preg_quote' function setting the second argument
 
                     <table class="table table-condensed">
         <tr>
-            <td>object</td>
+            <td>
+    object</td>
             <td>$this for method chaining</td>
         </tr>
     </table>
@@ -244,9 +281,11 @@ The mask can be escaped by the 'preg_quote' function setting the second argument
             </div>
                     <div class="method-item">
                     <h3 id="method_setMaskReference">
-        <div class="location">at line 112</div>
-        <code>                    object
-    <strong>setMaskReference</strong>(string $ref)</code>
+        <div class="location">at line 115</div>
+        <code>                    
+    object
+    <strong>setMaskReference</strong>(
+    string $ref)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -256,7 +295,8 @@ The mask can be escaped by the 'preg_quote' function setting the second argument
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$ref</td>
                 <td>The reference of the validation mask</td>
             </tr>
@@ -267,7 +307,8 @@ The mask can be escaped by the 'preg_quote' function setting the second argument
 
                     <table class="table table-condensed">
         <tr>
-            <td>object</td>
+            <td>
+    object</td>
             <td>$this for method chaining</td>
         </tr>
     </table>
@@ -280,9 +321,11 @@ The mask can be escaped by the 'preg_quote' function setting the second argument
             </div>
                     <div class="method-item">
                     <h3 id="method_setPcreOptions">
-        <div class="location">at line 124</div>
-        <code>                    object
-    <strong>setPcreOptions</strong>(string $opts)</code>
+        <div class="location">at line 127</div>
+        <code>                    
+    object
+    <strong>setPcreOptions</strong>(
+    string $opts)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -292,7 +335,8 @@ The mask can be escaped by the 'preg_quote' function setting the second argument
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$opts</td>
                 <td>The options used for the PCRE mask construction</td>
             </tr>
@@ -303,7 +347,8 @@ The mask can be escaped by the 'preg_quote' function setting the second argument
 
                     <table class="table table-condensed">
         <tr>
-            <td>object</td>
+            <td>
+    object</td>
             <td>$this for method chaining</td>
         </tr>
     </table>
@@ -316,9 +361,11 @@ The mask can be escaped by the 'preg_quote' function setting the second argument
             </div>
                     <div class="method-item">
                     <h3 id="method_setPcreDelimiter">
-        <div class="location">at line 136</div>
-        <code>                    object
-    <strong>setPcreDelimiter</strong>(string $delim)</code>
+        <div class="location">at line 139</div>
+        <code>                    
+    object
+    <strong>setPcreDelimiter</strong>(
+    string $delim)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -328,7 +375,8 @@ The mask can be escaped by the 'preg_quote' function setting the second argument
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$delim</td>
                 <td>The delimiter used for PCRE mask construction</td>
             </tr>
@@ -339,7 +387,8 @@ The mask can be escaped by the 'preg_quote' function setting the second argument
 
                     <table class="table table-condensed">
         <tr>
-            <td>object</td>
+            <td>
+    object</td>
             <td>$this for method chaining</td>
         </tr>
     </table>
@@ -352,9 +401,11 @@ The mask can be escaped by the 'preg_quote' function setting the second argument
             </div>
                     <div class="method-item">
                     <h3 id="method_setPregQuote">
-        <div class="location">at line 148</div>
-        <code>                    object
-    <strong>setPregQuote</strong>(bool $protect)</code>
+        <div class="location">at line 151</div>
+        <code>                    
+    object
+    <strong>setPregQuote</strong>(
+    bool $protect)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -364,7 +415,8 @@ The mask can be escaped by the 'preg_quote' function setting the second argument
 
                     <table class="table table-condensed">
                     <tr>
-                <td>bool</td>
+                <td>
+    bool</td>
                 <td>$protect</td>
                 <td>The protection value to use 'preg_quote' protection on mask</td>
             </tr>
@@ -375,7 +427,8 @@ The mask can be escaped by the 'preg_quote' function setting the second argument
 
                     <table class="table table-condensed">
         <tr>
-            <td>object</td>
+            <td>
+    object</td>
             <td>$this for method chaining</td>
         </tr>
     </table>
@@ -388,9 +441,12 @@ The mask can be escaped by the 'preg_quote' function setting the second argument
             </div>
                     <div class="method-item">
                     <h3 id="method_validate">
-        <div class="location">at line 162</div>
-        <code>                    bool
-    <strong>validate</strong>(string $value, bool $send_errors = false)</code>
+        <div class="location">at line 165</div>
+        <code>                    
+    bool
+    <strong>validate</strong>(
+    string $value, 
+    bool $send_errors = false)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -400,12 +456,14 @@ The mask can be escaped by the 'preg_quote' function setting the second argument
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$value</td>
-                <td>The local part of an email address to validate</td>
+                <td>The value to validate</td>
             </tr>
                     <tr>
-                <td>bool</td>
+                <td>
+    bool</td>
                 <td>$send_errors</td>
                 <td>Does the function must throw exceptions on validation failures ?</td>
             </tr>
@@ -416,8 +474,9 @@ The mask can be escaped by the 'preg_quote' function setting the second argument
 
                     <table class="table table-condensed">
         <tr>
-            <td>bool</td>
-            <td>TRUE if <code>$value</code> pass the Email validation</td>
+            <td>
+    bool</td>
+            <td>TRUE if <code>$value</code> passes the validation</td>
         </tr>
     </table>
 
@@ -426,7 +485,7 @@ The mask can be escaped by the 'preg_quote' function setting the second argument
 
                     <table class="table table-condensed">
                     <tr>
-                <td><a href="http://php.net/Exception"><abbr title="Exception">Exception</abbr></a></td>
+                <td><a target="_blank" href="http://php.net/Exception"><abbr title="Exception">Exception</abbr></a></td>
                 <td>for each invalid part if <code>$send_errors</code> is true</td>
             </tr>
             </table>
@@ -438,9 +497,11 @@ The mask can be escaped by the 'preg_quote' function setting the second argument
             </div>
                     <div class="method-item">
                     <h3 id="method_sanitize">
-        <div class="location">at line 193</div>
-        <code>                    string
-    <strong>sanitize</strong>(string $value)</code>
+        <div class="location">at line 196</div>
+        <code>                    
+    mixed
+    <strong>sanitize</strong>(
+    mixed $value)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -450,7 +511,8 @@ The mask can be escaped by the 'preg_quote' function setting the second argument
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    mixed</td>
                 <td>$value</td>
                 <td>
 </td>
@@ -462,7 +524,8 @@ The mask can be escaped by the 'preg_quote' function setting the second argument
 
                     <table class="table table-condensed">
         <tr>
-            <td>string</td>
+            <td>
+    mixed</td>
             <td>
 </td>
         </tr>

@@ -2,7 +2,7 @@
 /**
  * This file is part of the Validators package.
  *
- * Copyright (c) 2013-2015 Pierre Cassat <me@e-piwi.fr> and contributors
+ * Copyright (c) 2013-2016 Pierre Cassat <me@e-piwi.fr> and contributors
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -65,9 +65,13 @@ class StringMaskValidator
      */
     public function __construct($mask = null, $ref = null, $options = array())
     {
-        if (!is_null($mask)) $this->setMask($mask);
-        if (!is_null($ref)) $this->setMaskReference($ref);
-        foreach($options as $_name=>$_value) {
+        if (!is_null($mask)) {
+            $this->setMask($mask);
+        }
+        if (!is_null($ref)) {
+            $this->setMaskReference($ref);
+        }
+        foreach ($options as $_name=>$_value) {
             if (property_exists($this, $_name)) {
                 $this->$_name = $_value;
             }
@@ -96,7 +100,7 @@ class StringMaskValidator
     public function setMask($mask, $protect = null)
     {
         if (!is_null($protect)) {
-            $this->setPregQuote( $protect );
+            $this->setPregQuote($protect);
         }
         $this->mask = $mask;
         return $this;
@@ -226,7 +230,4 @@ class StringMaskValidator
     {
         return $this->pcre_delimiter . $this->mask . $this->pcre_delimiter . $this->pcre_options;
     }
-
 }
-
-// Endfile

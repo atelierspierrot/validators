@@ -12,6 +12,9 @@
         <script src="../js/bootstrap.min.js"></script>
         <script src="../js/typeahead.min.js"></script>
         <script src="../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     
     
     </head>
@@ -73,7 +76,8 @@
 
     <p>    class
     <strong>EmailValidator</strong>        extends <a href="../Validator/AbstractMasksValidatorHelper.html"><abbr title="Validator\AbstractMasksValidatorHelper">AbstractMasksValidatorHelper</abbr></a>        implements
-        <a href="../Validator/ValidatorInterface.html"><abbr title="Validator\ValidatorInterface">ValidatorInterface</abbr></a></p>
+        <a href="../Validator/ValidatorInterface.html"><abbr title="Validator\ValidatorInterface">ValidatorInterface</abbr></a>
+</p>
 
             <div class="description">
             <p>Email validator</p>                    </div>
@@ -85,7 +89,8 @@
             <table class="table table-condensed">
                     <tr>
                 <td class="type" id="property_standards_list">
-                    static                                                            array
+                    static                                                            
+    array
                 </td>
                 <td>$standards_list</td>
                 <td class="last">
@@ -100,43 +105,56 @@
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../Validator/AbstractMasksValidatorHelper.html"><abbr title="Validator\AbstractMasksValidatorHelper">AbstractMasksValidatorHelper</abbr></a>
+                    
+    <a href="../Validator/AbstractMasksValidatorHelper.html"><abbr title="Validator\AbstractMasksValidatorHelper">AbstractMasksValidatorHelper</abbr></a>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_setMasks">setMasks</a>(array $masks)
+                    <a href="#method_setMasks">setMasks</a>(
+    array $masks)
                                             <p>Register a new mask set</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../Validator/AbstractMasksValidatorHelper.html#method_setMasks"><abbr title="Validator\AbstractMasksValidatorHelper">AbstractMasksValidatorHelper</abbr></a></small></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    <a href="../Validator/AbstractMasksValidatorHelper.html"><abbr title="Validator\AbstractMasksValidatorHelper">AbstractMasksValidatorHelper</abbr></a>
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_addMask">addMask</a>(string $mask_name, string $mask)
-                                            <p>Register a new mask</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../Validator/AbstractMasksValidatorHelper.html#method_addMask"><abbr title="Validator\AbstractMasksValidatorHelper">AbstractMasksValidatorHelper</abbr></a></small></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    array
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_getMasks">getMasks</a>()
-                                            <p>Get the masks registry</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../Validator/AbstractMasksValidatorHelper.html#method_getMasks"><abbr title="Validator\AbstractMasksValidatorHelper">AbstractMasksValidatorHelper</abbr></a></small></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    string
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_getMask">getMask</a>(string $mask_name)
-                                            <p>Get a registered mask</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../Validator/AbstractMasksValidatorHelper.html#method_getMask"><abbr title="Validator\AbstractMasksValidatorHelper">AbstractMasksValidatorHelper</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../Validator/AbstractMasksValidatorHelper.html#method_setMasks"><abbr title="Validator\AbstractMasksValidatorHelper">AbstractMasksValidatorHelper</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     
+    <a href="../Validator/AbstractMasksValidatorHelper.html"><abbr title="Validator\AbstractMasksValidatorHelper">AbstractMasksValidatorHelper</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addMask">addMask</a>(
+    string $mask_name, 
+    string $mask)
+                                            <p>Register a new mask</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../Validator/AbstractMasksValidatorHelper.html#method_addMask"><abbr title="Validator\AbstractMasksValidatorHelper">AbstractMasksValidatorHelper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMasks">getMasks</a>()
+                                            <p>Get the masks registry</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../Validator/AbstractMasksValidatorHelper.html#method_getMasks"><abbr title="Validator\AbstractMasksValidatorHelper">AbstractMasksValidatorHelper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMask">getMask</a>(
+    string $mask_name)
+                                            <p>Get a registered mask</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../Validator/AbstractMasksValidatorHelper.html#method_getMask"><abbr title="Validator\AbstractMasksValidatorHelper">AbstractMasksValidatorHelper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method___construct">__construct</a>()
@@ -145,46 +163,59 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    bool
+                    
+    bool
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_validate">validate</a>(string $value, bool $send_errors = false)
+                    <a href="#method_validate">validate</a>(
+    string $value, 
+    bool $send_errors = false)
                                             <p>Process validation</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    string
+                    
+    mixed
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_sanitize">sanitize</a>(string $value)
+                    <a href="#method_sanitize">sanitize</a>(
+    mixed $value)
                                             <p>Try to make $value pass the validation</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    bool
+                    
+    bool
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_validateLocalPart">validateLocalPart</a>(string $value, bool $send_errors = false)
+                    <a href="#method_validateLocalPart">validateLocalPart</a>(
+    string $value, 
+    bool $send_errors = false)
                                             <p>Process local part validation</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    bool
+                    
+    bool
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_validateDomainPart">validateDomainPart</a>(string $value, bool $send_errors = false)
+                    <a href="#method_validateDomainPart">validateDomainPart</a>(
+    string $value, 
+    bool $send_errors = false)
                                             <p>Process domain part validation</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     
+    
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_setMustPass">setMustPass</a>(string $ref)
+                    <a href="#method_setMustPass">setMustPass</a>(
+    string $ref)
                                             <p>Defines the RFC to validate</p>                </div>
                 <div class="col-md-2"></div>
             </div>
@@ -196,9 +227,12 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method_setMasks">
-        <div class="location">in <a href="../Validator/AbstractMasksValidatorHelper.html#method_setMasks"><abbr title="Validator\AbstractMasksValidatorHelper">AbstractMasksValidatorHelper</abbr></a> at line 45</div>
-        <code>                    <a href="../Validator/AbstractMasksValidatorHelper.html"><abbr title="Validator\AbstractMasksValidatorHelper">AbstractMasksValidatorHelper</abbr></a>
-    <strong>setMasks</strong>(array $masks)</code>
+        <div class="location">in 
+    <a href="../Validator/AbstractMasksValidatorHelper.html#method_setMasks"><abbr title="Validator\AbstractMasksValidatorHelper">AbstractMasksValidatorHelper</abbr></a> at line 44</div>
+        <code>                    
+    <a href="../Validator/AbstractMasksValidatorHelper.html"><abbr title="Validator\AbstractMasksValidatorHelper">AbstractMasksValidatorHelper</abbr></a>
+    <strong>setMasks</strong>(
+    array $masks)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -208,7 +242,8 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>array</td>
+                <td>
+    array</td>
                 <td>$masks</td>
                 <td>The mask table as name=>mask pairs</td>
             </tr>
@@ -219,7 +254,8 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><a href="../Validator/AbstractMasksValidatorHelper.html"><abbr title="Validator\AbstractMasksValidatorHelper">AbstractMasksValidatorHelper</abbr></a></td>
+            <td>
+    <a href="../Validator/AbstractMasksValidatorHelper.html"><abbr title="Validator\AbstractMasksValidatorHelper">AbstractMasksValidatorHelper</abbr></a></td>
             <td>
 </td>
         </tr>
@@ -233,9 +269,13 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_addMask">
-        <div class="location">in <a href="../Validator/AbstractMasksValidatorHelper.html#method_addMask"><abbr title="Validator\AbstractMasksValidatorHelper">AbstractMasksValidatorHelper</abbr></a> at line 58</div>
-        <code>                    <a href="../Validator/AbstractMasksValidatorHelper.html"><abbr title="Validator\AbstractMasksValidatorHelper">AbstractMasksValidatorHelper</abbr></a>
-    <strong>addMask</strong>(string $mask_name, string $mask)</code>
+        <div class="location">in 
+    <a href="../Validator/AbstractMasksValidatorHelper.html#method_addMask"><abbr title="Validator\AbstractMasksValidatorHelper">AbstractMasksValidatorHelper</abbr></a> at line 57</div>
+        <code>                    
+    <a href="../Validator/AbstractMasksValidatorHelper.html"><abbr title="Validator\AbstractMasksValidatorHelper">AbstractMasksValidatorHelper</abbr></a>
+    <strong>addMask</strong>(
+    string $mask_name, 
+    string $mask)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -245,12 +285,14 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$mask_name</td>
                 <td>The mask name to set</td>
             </tr>
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$mask</td>
                 <td>The mask value to set</td>
             </tr>
@@ -261,7 +303,8 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><a href="../Validator/AbstractMasksValidatorHelper.html"><abbr title="Validator\AbstractMasksValidatorHelper">AbstractMasksValidatorHelper</abbr></a></td>
+            <td>
+    <a href="../Validator/AbstractMasksValidatorHelper.html"><abbr title="Validator\AbstractMasksValidatorHelper">AbstractMasksValidatorHelper</abbr></a></td>
             <td>
 </td>
         </tr>
@@ -275,8 +318,10 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getMasks">
-        <div class="location">in <a href="../Validator/AbstractMasksValidatorHelper.html#method_getMasks"><abbr title="Validator\AbstractMasksValidatorHelper">AbstractMasksValidatorHelper</abbr></a> at line 69</div>
-        <code>                    array
+        <div class="location">in 
+    <a href="../Validator/AbstractMasksValidatorHelper.html#method_getMasks"><abbr title="Validator\AbstractMasksValidatorHelper">AbstractMasksValidatorHelper</abbr></a> at line 68</div>
+        <code>                    
+    array
     <strong>getMasks</strong>()</code>
     </h3>
     <div class="details">
@@ -288,7 +333,8 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>array</td>
+            <td>
+    array</td>
             <td>The masks array</td>
         </tr>
     </table>
@@ -301,9 +347,12 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getMask">
-        <div class="location">in <a href="../Validator/AbstractMasksValidatorHelper.html#method_getMask"><abbr title="Validator\AbstractMasksValidatorHelper">AbstractMasksValidatorHelper</abbr></a> at line 80</div>
-        <code>                    string
-    <strong>getMask</strong>(string $mask_name)</code>
+        <div class="location">in 
+    <a href="../Validator/AbstractMasksValidatorHelper.html#method_getMask"><abbr title="Validator\AbstractMasksValidatorHelper">AbstractMasksValidatorHelper</abbr></a> at line 79</div>
+        <code>                    
+    string
+    <strong>getMask</strong>(
+    string $mask_name)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -313,7 +362,8 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$mask_name</td>
                 <td>The name of the mask to get</td>
             </tr>
@@ -324,7 +374,8 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>string</td>
+            <td>
+    string</td>
             <td>The value registered for the mask name, an empty string if it has not been found</td>
         </tr>
     </table>
@@ -337,8 +388,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at line 55</div>
+        <div class="location">at line 54</div>
         <code>                    
+    
     <strong>__construct</strong>()</code>
     </h3>
     <div class="details">
@@ -354,9 +406,12 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_validate">
-        <div class="location">at line 86</div>
-        <code>                    bool
-    <strong>validate</strong>(string $value, bool $send_errors = false)</code>
+        <div class="location">at line 84</div>
+        <code>                    
+    bool
+    <strong>validate</strong>(
+    string $value, 
+    bool $send_errors = false)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -366,12 +421,14 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$value</td>
-                <td>The email address to validate</td>
+                <td>The value to validate</td>
             </tr>
                     <tr>
-                <td>bool</td>
+                <td>
+    bool</td>
                 <td>$send_errors</td>
                 <td>Does the function must throw exceptions on validation failures ?</td>
             </tr>
@@ -382,8 +439,9 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>bool</td>
-            <td>TRUE if $value pass the Email validation</td>
+            <td>
+    bool</td>
+            <td>TRUE if <code>$value</code> passes the validation</td>
         </tr>
     </table>
 
@@ -392,7 +450,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><a href="http://php.net/Exception"><abbr title="Exception">Exception</abbr></a></td>
+                <td><a target="_blank" href="http://php.net/Exception"><abbr title="Exception">Exception</abbr></a></td>
                 <td>if the email address does not contain an "at" sign ("@")</td>
             </tr>
             </table>
@@ -404,9 +462,11 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_sanitize">
-        <div class="location">at line 118</div>
-        <code>                    string
-    <strong>sanitize</strong>(string $value)</code>
+        <div class="location">at line 116</div>
+        <code>                    
+    mixed
+    <strong>sanitize</strong>(
+    mixed $value)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -416,7 +476,8 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    mixed</td>
                 <td>$value</td>
                 <td>
 </td>
@@ -428,7 +489,8 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>string</td>
+            <td>
+    mixed</td>
             <td>
 </td>
         </tr>
@@ -442,9 +504,12 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_validateLocalPart">
-        <div class="location">at line 131</div>
-        <code>                    bool
-    <strong>validateLocalPart</strong>(string $value, bool $send_errors = false)</code>
+        <div class="location">at line 129</div>
+        <code>                    
+    bool
+    <strong>validateLocalPart</strong>(
+    string $value, 
+    bool $send_errors = false)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -454,12 +519,14 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$value</td>
                 <td>The local part of an email address to validate</td>
             </tr>
                     <tr>
-                <td>bool</td>
+                <td>
+    bool</td>
                 <td>$send_errors</td>
                 <td>Does the function must throw exceptions on validation failures ?</td>
             </tr>
@@ -470,7 +537,8 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>bool</td>
+            <td>
+    bool</td>
             <td>TRUE if <code>$value</code> pass the Email validation</td>
         </tr>
     </table>
@@ -480,7 +548,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><a href="http://php.net/Exception"><abbr title="Exception">Exception</abbr></a></td>
+                <td><a target="_blank" href="http://php.net/Exception"><abbr title="Exception">Exception</abbr></a></td>
                 <td>for each invalid part if <code>$send_errors</code> is true</td>
             </tr>
             </table>
@@ -492,9 +560,12 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_validateDomainPart">
-        <div class="location">at line 195</div>
-        <code>                    bool
-    <strong>validateDomainPart</strong>(string $value, bool $send_errors = false)</code>
+        <div class="location">at line 200</div>
+        <code>                    
+    bool
+    <strong>validateDomainPart</strong>(
+    string $value, 
+    bool $send_errors = false)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -504,12 +575,14 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$value</td>
                 <td>The domain part of an email address to validate</td>
             </tr>
                     <tr>
-                <td>bool</td>
+                <td>
+    bool</td>
                 <td>$send_errors</td>
                 <td>Does the function must throw exceptions on validation failures ?</td>
             </tr>
@@ -520,7 +593,8 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>bool</td>
+            <td>
+    bool</td>
             <td>TRUE if $value pass the Email validation</td>
         </tr>
     </table>
@@ -530,7 +604,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><a href="http://php.net/Exception"><abbr title="Exception">Exception</abbr></a></td>
+                <td><a target="_blank" href="http://php.net/Exception"><abbr title="Exception">Exception</abbr></a></td>
                 <td>for each invalid part if <code>$send_errors</code> is true</td>
             </tr>
             </table>
@@ -542,9 +616,11 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setMustPass">
-        <div class="location">at line 242</div>
+        <div class="location">at line 253</div>
         <code>                    
-    <strong>setMustPass</strong>(string $ref)</code>
+    
+    <strong>setMustPass</strong>(
+    string $ref)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -554,7 +630,8 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$ref</td>
                 <td>
 </td>
@@ -567,7 +644,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><a href="http://php.net/Exception"><abbr title="Exception">Exception</abbr></a></td>
+                <td><a target="_blank" href="http://php.net/Exception"><abbr title="Exception">Exception</abbr></a></td>
                 <td>if the <code>$ref</code> is not a known RFC</td>
             </tr>
             </table>

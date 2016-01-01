@@ -2,7 +2,7 @@
 /**
  * This file is part of the Validators package.
  *
- * Copyright (c) 2013-2015 Pierre Cassat <me@e-piwi.fr> and contributors
+ * Copyright (c) 2013-2016 Pierre Cassat <me@e-piwi.fr> and contributors
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -43,12 +43,12 @@ class HostnameValidator
      */
     public function __construct()
     {
-        $this->addMask( 'AlphaDigit', '[A-Za-z0-9]' );
-        $this->addMask( 'AlphaDigitHyphen', '[A-Za-z0-9-]' );
-        $this->addMask( 'RFC952',
+        $this->addMask('AlphaDigit', '[A-Za-z0-9]');
+        $this->addMask('AlphaDigitHyphen', '[A-Za-z0-9-]');
+        $this->addMask('RFC952',
             '[^0-9-]' . $this->getMask('AlphaDigitHyphen') . '*[^-]'
         );
-        $this->addMask( 'RFC1123',
+        $this->addMask('RFC1123',
             '[^-]' . $this->getMask('AlphaDigitHyphen') . '*[^-]'
         );
     }
@@ -65,27 +65,29 @@ class HostnameValidator
     {
 
         // check for length compliance (max 255 chars.)
-        $lengthValidator = new StringLengthValidator( 0, 255 );
+        $lengthValidator = new StringLengthValidator(0, 255);
         try {
             if (false===$length_valid = $lengthValidator->validate($value, false)) {
                 if (true===$send_errors) {
-                    throw new \Exception( sprintf('The hostname [%s] must not be up to 255 characters long!', $value) );
+                    throw new \Exception(sprintf('The hostname [%s] must not be up to 255 characters long!', $value));
                 }
                 return false;
             }
-        } catch (\Exception $e) { throw $e; }
+        } catch (\Exception $e) {
+            throw $e;
+        }
 
         // check for double-dots
         if (false!==strpos($value, '..')) {
             if (true===$send_errors) {
-                throw new \Exception( sprintf('The hostname [%s] must not contain double-dots!', $value) );
+                throw new \Exception(sprintf('The hostname [%s] must not contain double-dots!', $value));
             }
             return false;
         }
 
         // check for each labels validity
         // => max length of 63 chars.
-        $labelLengthValidator = new StringLengthValidator( 1, 63 );
+        $labelLengthValidator = new StringLengthValidator(1, 63);
         // => AlphaDigit compliance for a single char.
         $singlechar_labelMaskValidator = new StringMaskValidator(
             '^' . $this->getMask('AlphaDigit') . '$'
@@ -101,24 +103,24 @@ class HostnameValidator
                 if (strlen($_label) && false===$label_length_valid = $labelLengthValidator->validate($_label, false)) {
                     if (true===$send_errors) {
                         throw new \Exception(
-                            sprintf('The label [%s] in the hostname [%s] must not be up to 63 characters long!', $_label, $value) );
+                            sprintf('The label [%s] in the hostname [%s] must not be up to 63 characters long!', $_label, $value));
                     }
                     return false;
                 }
 
                 if (strlen($_label)>1 && false===$label_mask_valid = $labelMaskValidator->validate($_label, $send_errors)) {
                     return false;
-                }
-                elseif (strlen($_label)==1 && false===$label_mask_valid = $singlechar_labelMaskValidator->validate($_label, false)) {
+                } elseif (strlen($_label)==1 && false===$label_mask_valid = $singlechar_labelMaskValidator->validate($_label, false)) {
                     if (true===$send_errors) {
                         throw new \Exception(
-                            sprintf('The single character label [%s] in the hostname [%s] must be an alpha-numeric string!', $_label, $value) );
+                            sprintf('The single character label [%s] in the hostname [%s] must be an alpha-numeric string!', $_label, $value));
                     }
                     return false;
                 }
-
             }
-        } catch (\Exception $e) { throw $e; }
+        } catch (\Exception $e) {
+            throw $e;
+        }
 
         return true;
     }
@@ -145,13 +147,12 @@ class HostnameValidator
         if (null!==$this->getMask($ref)) {
             $this->must_pass = $ref;
         } else {
-            throw new \Exception( sprintf("Unknown standard [%s] in Hostname validation!", $ref) );
+            throw new \Exception(sprintf("Unknown standard [%s] in Hostname validation!", $ref));
         }
     }
-
 }
 
-// Endfile
+
 
 /*
 //Valid hostnames
